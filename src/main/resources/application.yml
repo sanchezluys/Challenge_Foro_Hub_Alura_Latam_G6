@@ -1,9 +1,9 @@
 spring:
   profile.active: dev, test, prod
   datasource:
-    url: jdbc:mysql://localhost/vollmed_api
-    username: root
-    password: 2812
+    url: jdbc:mysql://${DB_HOST}
+    username: ${DB_USER}
+    password: ${DB_PASS}
   jpa:
     show-sql: true
     properties:
