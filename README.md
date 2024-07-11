@@ -57,23 +57,57 @@ links
     login: luys
     clave: $2a$12$Q8OJ.GSLqj5PgWEExE22o.zEncR/l6I4JFR3pQoW0mlyxdBKy/LTK
 
-## Endpoints
-### 1. /login
+## Endpoints de la API
+
+### 1. POST: /login   Autenticación
 
 ![img.png](src/img/endpoint_login.png)
 
-### 2. GET: /usuario
+### 2. GET: /usuarios    Ver Listado de Usuarios
 
-### 3. PUT: /usuario
+![img.png](src/img/getListadoUsuarios.png)
 
-### 4. GET: /usuario/{id}
+### 3. POST: /usuario    Agregar Usuario
 
-### 5. DELETE: /usuario/{id}
+payload:
 
-### 6. GET: /topico
+    {
+        "login":"nombre_usuario",
+        "clave":"clave_usuario"
+    }
 
-### 7. PUT: /topico
+![img.png](src/img/agregarUsuario.png)
 
+### 4. GET: /usuarios/{id}  Ver un Usuario Por Id
+
+![img.png](src/img/verUsuarioPorId.png)
+
+### 5. DELETE: /usuarios/{id}  Borrar Un Usuario por Id
+
+![img.png](src/img/borrarUsuario.png)
+
+### 6. PUT: /usuarios   Editar Usuario
+
+payload:
+
+    {
+        "id":"2",
+        "login":"otro_nombre"
+    }
+    
+![img.png](src/img/editarUsuario.png)
+
+### 7. POST: /topicos   Agregar Un nuevo Topico
+
+### 8. PUT: /topicos   Actualizar un topico
+
+### 9. GET: /topicos   Listar todos los Topicos
+
+### 10. DELETE: /topicos/{id}   Borrar un Topico
+
+### 11. GET: /hello    Verificar que este funcionando el servidor
+
+![img.png](src/img/verificarServidor.png)
 
 
 ## Documentacion de la API
@@ -81,3 +115,21 @@ links
 http://localhost:8080/swagger-ui/index.html
 
 ## Diagrama Entidad Relación
+
+## Configuración Insomia
+
+![img.png](src/img/configuracionInsomia.png)
+
+## Mejoras y Bugs pendientes por corregir
+
+| Item | Tipo   | Descripción                                          | Propuesta      |
+|------|--------|------------------------------------------------------|----------------|
+| 1    | Bug    | No guarda la clave encriptada en los nuevos usuarios | revisar código |
+|      |        |                                                      |                |
+| 2    | Mejora | Que solo liste los usuarios activos                  |                |
+|      |        |                                                      |                |
+| 3    | Mejora | Mejorar los mensajes en cada respuesta de la API     |                |
+|      |        |                                                      |                |
+|      |        |                                                      |                |
+|      |        |                                                      |                |
+|      |        |                                                      |                |

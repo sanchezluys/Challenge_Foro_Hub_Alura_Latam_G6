@@ -25,6 +25,12 @@ public class Usuario implements UserDetails {
     private Long id;
     private String login;
     private String clave;
+    private Boolean activo;
+
+    public Usuario(DatosRegistroUsuario datosRegistroUsuario) {
+        this.login = datosRegistroUsuario.login();
+        this.clave = datosRegistroUsuario.clave();
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -59,5 +65,16 @@ public class Usuario implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public void desactivarUsuario() {
+        this.activo = false;
+    }
+
+    public void actualizarDatos(DatosActualizarUsuario datosActualizarUsuario)
+    {
+        if (datosActualizarUsuario.login() != null) {
+            this.login = datosActualizarUsuario.login();
+        }
     }
 }
