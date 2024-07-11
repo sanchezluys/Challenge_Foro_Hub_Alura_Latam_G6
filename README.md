@@ -20,6 +20,25 @@ links
 <a>https://spring.io/projects/spring-boot</a><br>
 <a>https://www.aluracursos.com/</a><br>
 
+### Tecnologías aplicadas
+
+| Item | Nombre               | Usos |
+|------|----------------------|------|
+| 1    | Lombok               |      |
+|      |                      |      |
+| 2    | Spring Web           |      |
+|      |                      |      |
+| 3    | Spring Boot DevTools |      |
+|      |                      |      |
+| 4    | Spring Data JPA      |      |
+|      |                      |      |
+| 5    | Flyway Migration     |      |
+|      |                      |      |
+| 6    | MySQL Driver         |      |
+|      |                      |      |
+| 7    | Validation           |      |
+|      |                      |      |
+| 8    | Spring Security      |      |
 
 
 2) ide<br>
@@ -27,5 +46,38 @@ links
 <br>
 
 
+### Payload para el login
+    {
+        "login":"luys",
+        "clave":"123456"
+    }
+
+#### Se usa Bcrypt https://bcrypt-generator.com/
+    En la BD MySQL:
+    login: luys
+    clave: $2a$12$Q8OJ.GSLqj5PgWEExE22o.zEncR/l6I4JFR3pQoW0mlyxdBKy/LTK
+
+## Endpoints
+### 1. /login
+
+![img.png](src/img/endpoint_login.png)
+
+### 2. GET: /usuario
+
+### 3. PUT: /usuario
+
+### 4. GET: /usuario/{id}
+
+### 5. DELETE: /usuario/{id}
+
+### 6. GET: /topico
+
+### 7. PUT: /topico
 
 
+
+## Documentacion de la API
+
+http://localhost:8080/swagger-ui/index.html
+
+## Diagrama Entidad Relación
