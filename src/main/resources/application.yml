@@ -11,6 +11,7 @@ spring:
         format_sql: true
 
 server:
+  port: 8089
   error:
     include-stacktrace: never
 api:
