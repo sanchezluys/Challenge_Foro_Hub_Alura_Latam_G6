@@ -1,21 +1,21 @@
-# <h1>Challenge Foro Hub</h1>
+![img.png](src/img/logoAlura.png)
 
-proyecto: <h2>spring-boot-3</h2>
 
- 
+# JAVA SDK 17 + Intellij IDEA
+## Challenge FORO HUB G6 One
+### SPRING BOOT
+### Profesores: 
 
-<ol>
-  <li>Aprenda a aislar código de reglas de negocio en una aplicación</li>
-  <li>Implemente princípios SOLID</li>
-  <li>Documente una API seguindo el protocolo OpenAPI</li>
-  <li>Aprenda a escribir pruebas automatizadas en una aplicación con Spring Boot</li>
-  <li>Realize el build de una aplicação con Spring Boot</li>
-  <li>Use variables de entorno/ambiente y prepare una aplicación para su implementación/deploy</li>
-</ol>
+<hr>
 
-links
+![Static Badge](https://img.shields.io/badge/Lenguaje-Java%2017-blue)  ![Static Badge](https://img.shields.io/badge/Versi%C3%B3n-Beta-Yellow)  <label><img src="https://img.shields.io/badge/Estatus-En%20Desarrollo-green"></label>
+<hr>
+    <img src="src/img/logoJava.png" alt="Logo Java" width="150px">
+<hr>
+
 
 1) dependencias<br>
+
 <a>https://www.postman.com/</a><br>
 <a>https://spring.io/projects/spring-boot</a><br>
 <a>https://www.aluracursos.com/</a><br>
@@ -41,7 +41,8 @@ links
 | 8    | Spring Security      |      |
 
 
-2) ide<br>
+2) IDE INTELLIJ JETBRAINS <br>
+
 <a href="https://www.jetbrains.com/idea/promo/?msclkid=c934a6edeb2510614d26c2af04a86b25&utm_source=bing&utm_medium=cpc&utm_campaign=AMER_en_BR_IDEA_Branded&utm_term=intellij&utm_content=intellij%20idea">Descarga Intellij</a>
 <br>
 
