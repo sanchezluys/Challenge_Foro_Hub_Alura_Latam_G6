@@ -102,9 +102,15 @@ payload:
 
 ### 8. PUT: /topicos   Actualizar un topico
 
+![img.png](src/img/actualizarTopico.png)
+
 ### 9. GET: /topicos   Listar todos los Topicos
 
+![img.png](src/img/listarTopicos.png)
+
 ### 10. DELETE: /topicos/{id}   Borrar un Topico
+
+![img.png](src/img/borrarTopico.png)
 
 ### 11. GET: /hello    Verificar que este funcionando el servidor
 
@@ -119,7 +125,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ![img.png](src/img/diagramaEntidadRelacion.png)
 
-
+![img.png](src/img/muestraBaseDatosTopicos.png)
 
 ## Configuración Insomia
 

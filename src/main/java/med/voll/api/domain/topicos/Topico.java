@@ -1,6 +1,7 @@
 package med.voll.api.domain.topicos;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -25,22 +26,34 @@ public class Topico
     private String nombreCurso;
     private LocalDateTime fechaCreacion;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name= "author_id")
+    @JoinColumn(name= "autor_id")
+    @NotNull
     private Usuario autor;
     private Boolean activo;
 
-//    public Topico(Long id,
-//                  String titulo,
-//                  String mensaje,
-//                  String nombreCurso,
-//                  LocalDateTime fechaCreacion,
-//                  Usuario usuario)
-//    {
-//        this.id = id;
-//        this.titulo = titulo;
-//        this.mensaje = mensaje;
-//        this.nombreCurso = nombreCurso;
-//        this.fechaCreacion = fechaCreacion;
-//        this.autor = usuario;
-//    }
+    public Topico(DatosRegistroTopico datos)
+    {
+        System.out.println("--------------  LOG  ------------------");
+        System.out.println(" estoy aqui..... datos = "+datos);
+        System.out.println("--------------  LOG  ------------------");
+        this.activo = true;
+        //this.autor = datos.autor();
+        this.mensaje = datos.mensaje();
+        this.fechaCreacion = LocalDateTime.now();
+        this.nombreCurso = datos.nombre_curso();
+        this.titulo = datos.titulo();
+    }
+
+    public void actualizarInformacion(DatosActualizarTopico datos)
+    {
+        if (datos.id()!= null) {
+            this.titulo = datos.titulo();
+            this.mensaje = datos.mensaje();
+        }
+    }
+
+
+    public void eliminar() {
+        this.activo = false;
+    }
 }

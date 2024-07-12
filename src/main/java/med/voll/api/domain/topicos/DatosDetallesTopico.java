@@ -2,20 +2,18 @@ package med.voll.api.domain.topicos;
 
 import java.time.LocalDateTime;
 
-public record DatosListadoTopico(
+public record DatosDetallesTopico(
         Long id,
         String titulo,
         String mensaje,
-        LocalDateTime fechaCreacion
-)
+        LocalDateTime fecha_creacion)
 {
-    public DatosListadoTopico(Topico topico)
-    {
+    public DatosDetallesTopico(Topico topico) {
         this(
                 topico.getId(),
                 topico.getTitulo(),
                 topico.getMensaje(),
                 topico.getFechaCreacion()
-        );
+                );
     }
 }

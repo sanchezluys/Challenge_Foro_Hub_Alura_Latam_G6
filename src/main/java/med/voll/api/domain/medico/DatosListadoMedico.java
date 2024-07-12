@@ -5,8 +5,8 @@ public record DatosListadoMedico(
         String nombre,
         String especialidad,
         String documento,
-        String email) {
-
+        String email)
+{
     public DatosListadoMedico(Medico medico) {
         this(
                 medico.getId(),
