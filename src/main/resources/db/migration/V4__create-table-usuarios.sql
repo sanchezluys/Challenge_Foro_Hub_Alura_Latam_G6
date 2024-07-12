@@ -7,5 +7,4 @@ create table usuarios(
     activo tinyint,
 
     primary key(id)
-
 );

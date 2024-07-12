@@ -114,11 +114,19 @@ payload:
 
 http://localhost:8080/swagger-ui/index.html
 
-## Diagrama Entidad Relación
+## Diagrama Entidad Relación para MySQL
+
+![img.png](src/img/diagramaEntidadRelacion.png)
+
+
 
 ## Configuración Insomia
 
 ![img.png](src/img/configuracionInsomia.png)
+
+Archivo de condifiguracion Insomia Desktop
+
+[Insomia Configuracion](src/files_xtras/insomia_config.json)
 
 ## Mejoras y Bugs pendientes por corregir
 

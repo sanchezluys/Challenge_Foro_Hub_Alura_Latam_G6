@@ -7,8 +7,9 @@ public record DatosListadoUsuario(
 )
 {
     public DatosListadoUsuario(Usuario usuario) {
-        this(usuario.getId(),
-        usuario.getLogin(),
-        usuario.getClave());
+        this(
+                usuario.getId(),
+                usuario.getLogin(),
+                usuario.getClave());
     }
 }

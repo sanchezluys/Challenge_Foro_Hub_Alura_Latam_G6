@@ -23,9 +23,6 @@ import java.net.URI;
 public class UsuarioController {
 
     @Autowired
-    private MedicoRepository medicoRepository;
-
-    @Autowired
     private UsuarioRepository usuarioRepository;
 
     @PostMapping
