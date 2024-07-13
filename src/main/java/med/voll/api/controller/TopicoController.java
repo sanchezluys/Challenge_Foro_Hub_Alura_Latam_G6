@@ -37,8 +37,11 @@ public class TopicoController
     @PostMapping
     @Transactional
     @Operation(summary = "Registra un nuevo Topico")
-    public ResponseEntity registrarTopico(@RequestBody @Valid DatosRegistroTopico datos, UriComponentsBuilder uriBuilder) {
-        var topico = new Topico(datos);
+    public ResponseEntity registrarTopico(@RequestBody @Valid DatosRegistroTopico datos,
+                                          UriComponentsBuilder uriBuilder)
+    {
+        var topico = new Topico(datos, usuarioRepository);
+
         topicoRepository.save(topico);
 
         var uri = uriBuilder.path("/topicos/{id}").buildAndExpand(topico.getId()).toUri();
