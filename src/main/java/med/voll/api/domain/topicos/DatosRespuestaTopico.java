@@ -1,7 +1,5 @@
 package med.voll.api.domain.topicos;
 
-import med.voll.api.domain.direccion.DatosDireccion;
-
 import java.time.LocalDateTime;
 
 public record DatosRespuestaTopico(

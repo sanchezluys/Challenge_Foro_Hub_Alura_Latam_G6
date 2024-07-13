@@ -3,14 +3,9 @@ package med.voll.api.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
-import med.voll.api.domain.paciente.DatosActualizacionPaciente;
-import med.voll.api.domain.paciente.DatosDetallesPaciente;
-import med.voll.api.domain.paciente.DatosRegistroPaciente;
-import med.voll.api.domain.paciente.Paciente;
+
 import med.voll.api.domain.topicos.*;
-import med.voll.api.domain.usuarios.DatosListadoUsuario;
-import med.voll.api.domain.usuarios.DatosRespuestaUsuario;
-import med.voll.api.domain.usuarios.Usuario;
+
 import med.voll.api.domain.usuarios.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -42,7 +37,7 @@ public class TopicoController
     @PostMapping
     @Transactional
     @Operation(summary = "Registra un nuevo Topico")
-    public ResponseEntity registrar(@RequestBody @Valid DatosRegistroTopico datos, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity registrarTopico(@RequestBody @Valid DatosRegistroTopico datos, UriComponentsBuilder uriBuilder) {
         var topico = new Topico(datos);
         topicoRepository.save(topico);
 
