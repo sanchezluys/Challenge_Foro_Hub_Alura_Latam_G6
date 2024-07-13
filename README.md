@@ -125,6 +125,22 @@ payload:
 
 http://localhost:8080/swagger-ui/index.html
 
+### Login
+
+![img.png](src/img/loginDoc.png)
+
+### Endpoints para usuarios
+
+![img.png](src/img/endPointUsuariosDoc.png)
+
+### Endpoints para topicos
+
+![img.png](src/img/endPointTopicosDoc.png)
+
+### Endpoint hello server
+
+![img.png](src/img/endPointHelloDoc.png)
+
 ## Diagrama Entidad Relación para MySQL
 
 ![img.png](src/img/diagramaEntidadRelacion.png)
@@ -132,11 +148,11 @@ http://localhost:8080/swagger-ui/index.html
 
 ![img.png](src/img/muestraBaseDatosTopicos.png)
 
-## Configuración Insomia
+## Configuración Insomia Endpoints
 
 ![img.png](src/img/configuracionInsomia.png)
 
-Archivo de condifiguracion Insomia Desktop
+Archivo de configuración Insomia Desktop
 
 [Insomia Configuracion](src/files_xtras/insomia_config.json)
 
