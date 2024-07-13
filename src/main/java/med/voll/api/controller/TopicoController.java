@@ -9,6 +9,8 @@ import med.voll.api.domain.paciente.DatosRegistroPaciente;
 import med.voll.api.domain.paciente.Paciente;
 import med.voll.api.domain.topicos.*;
 import med.voll.api.domain.usuarios.DatosListadoUsuario;
+import med.voll.api.domain.usuarios.DatosRespuestaUsuario;
+import med.voll.api.domain.usuarios.Usuario;
 import med.voll.api.domain.usuarios.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -68,4 +70,19 @@ public class TopicoController
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/{id}")
+    @Operation(summary = "Obtiene los datos de un Topico por Id")
+    public ResponseEntity<DatosRespuestaTopico> retornaDatosTopico(@PathVariable Long id) {
+        Topico topico = topicoRepository.getReferenceById(id);
+        var datosTopico = new DatosRespuestaTopico(
+                topico.getId(),
+                topico.getTitulo(),
+                topico.getMensaje(),
+                topico.getNombreCurso(),
+                topico.getFechaCreacion(),
+                topico.getAutor().getId(),
+                topico.getActivo()
+        );
+        return ResponseEntity.ok(datosTopico);
+    }
 }

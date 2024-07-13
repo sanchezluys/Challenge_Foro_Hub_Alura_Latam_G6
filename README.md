@@ -104,15 +104,19 @@ payload:
 
 ![img.png](src/img/actualizarTopico.png)
 
-### 9. GET: /topicos   Listar todos los Topicos
+### 9. GET: /topicos/{id}   Ver Topico por Id
+
+![img.png](src/img/topicoPorId.png)
+
+### 10. GET: /topicos   Listar todos los Topicos
 
 ![img.png](src/img/listarTopicos.png)
 
-### 10. DELETE: /topicos/{id}   Borrar un Topico
+### 11. DELETE: /topicos/{id}   Borrar un Topico
 
 ![img.png](src/img/borrarTopico.png)
 
-### 11. GET: /hello    Verificar que este funcionando el servidor
+### 12. GET: /hello    Verificar que este funcionando el servidor
 
 ![img.png](src/img/verificarServidor.png)
 
@@ -124,6 +128,7 @@ http://localhost:8080/swagger-ui/index.html
 ## Diagrama Entidad Relación para MySQL
 
 ![img.png](src/img/diagramaEntidadRelacion.png)
+
 
 ![img.png](src/img/muestraBaseDatosTopicos.png)
 
