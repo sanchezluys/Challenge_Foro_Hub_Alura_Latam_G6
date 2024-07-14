@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.Collection;
 import java.util.List;
@@ -30,9 +31,18 @@ public class Usuario implements UserDetails {
 
 
     public Usuario(DatosRegistroUsuario datosRegistroUsuario) {
+
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+
+        String c=bCryptPasswordEncoder.encode(datosRegistroUsuario.clave());
+
+        System.out.println("-------------------");
+        System.out.println("log: c: "+c);
+        System.out.println("-------------------");
+
         this.login = datosRegistroUsuario.login();
         //this.clave= bCryptPasswordEncoder.encode(datosRegistroUsuario.clave());
-        this.clave = datosRegistroUsuario.clave();
+        this.clave = c; //datosRegistroUsuario.clave();
         this.activo = true;
     }
 
