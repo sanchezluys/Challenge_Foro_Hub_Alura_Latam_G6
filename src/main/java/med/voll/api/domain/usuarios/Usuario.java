@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
+
 @Table(name = "usuarios")
 @Entity(name = "Usuario")
 @Getter
@@ -27,9 +28,12 @@ public class Usuario implements UserDetails {
     private String clave;
     private Boolean activo;
 
+
     public Usuario(DatosRegistroUsuario datosRegistroUsuario) {
         this.login = datosRegistroUsuario.login();
+        //this.clave= bCryptPasswordEncoder.encode(datosRegistroUsuario.clave());
         this.clave = datosRegistroUsuario.clave();
+        this.activo = true;
     }
 
     @Override

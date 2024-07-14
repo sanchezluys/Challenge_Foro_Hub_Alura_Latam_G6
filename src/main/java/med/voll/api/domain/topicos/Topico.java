@@ -9,7 +9,6 @@ import med.voll.api.domain.usuarios.Usuario;
 import med.voll.api.domain.usuarios.UsuarioRepository;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Table(name = "topicos")
 @Entity(name = "Topico")
@@ -32,36 +31,16 @@ public class Topico
     private Boolean activo;
 
 
-    public Topico(DatosRegistroTopico datos, UsuarioRepository usuarioRepository) {
-
-        Usuario autor = new Usuario();
-
-        System.out.println("--------------  LOG  ------------------");
-        System.out.println(" Revisando..... autor = "+autor);
-        System.out.println("--------------  LOG  ------------------");
-
-
-        System.out.println("lo que encontre en bd: "+ usuarioRepository.findById(datos.autor()).stream().findFirst());
-
-
+    public Topico(DatosRegistroTopico datos, UsuarioRepository usuarioRepository)
+    {
         this.activo = true;
-        this.autor = null; // usuarioRepository.findById(datos.autor()); //buscarAutor(datos.autor());
+        this.autor = usuarioRepository.findById(datos.autor()).orElse(null);
         this.mensaje = datos.mensaje();
         this.fechaCreacion = LocalDateTime.now();
         this.nombreCurso = datos.nombre_curso();
         this.titulo = datos.titulo();
     }
 
-    private Usuario buscarAutor(Long autor)
-    {
-        System.out.println("--------------  LOG  ------------------");
-        System.out.println(" Revisando..... autor = "+autor);
-        System.out.println("--------------  LOG  ------------------");
-        // TODO: Implementar la búsqueda del autor en la base de datos
-        // Por ejemplo, usando Spring Data JPA:
-        //return usuarioRepository.findById(autor).orElse(null);
-        return null; // Simulando la búsqueda de un usuario en un repositorio ficticio
-    }
 
     public void actualizarInformacion(DatosActualizarTopico datos)
     {

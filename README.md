@@ -4,7 +4,7 @@
 # JAVA SDK 17 + Intellij IDEA
 ## Challenge FORO HUB G6 One
 ### SPRING BOOT
-### Profesores: 
+### Profesores: Genesys Rondon, Eric Fraga, Diego Rojas, Jose Viera 
 
 <hr>
 
@@ -99,6 +99,8 @@ payload:
 ![img.png](src/img/editarUsuario.png)
 
 ### 7. POST: /topicos   Agregar Un nuevo Topico
+
+![img.png](src/img/agregarNuevoTopico.png)
 
 ### 8. PUT: /topicos   Actualizar un topico
 
