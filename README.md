@@ -156,7 +156,7 @@ http://localhost:8080/swagger-ui/index.html
 
 Archivo de configuración Insomia Desktop
 
-[Insomia Configuracion](src/files_xtras/insomia_config.json)
+[Insomia Configuracion](src/files_xtras/insomia_final.json)
 
 ## Mejoras y Bugs pendientes por corregir
 
@@ -167,7 +167,4 @@ Archivo de configuración Insomia Desktop
 | 2    | Mejora | Que solo liste los usuarios activos                  |                |
 |      |        |                                                      |                |
 | 3    | Mejora | Mejorar los mensajes en cada respuesta de la API     |                |
-|      |        |                                                      |                |
-|      |        |                                                      |                |
-|      |        |                                                      |                |
-|      |        |                                                      |                |
+
