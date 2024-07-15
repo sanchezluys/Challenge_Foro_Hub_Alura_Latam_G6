@@ -147,6 +147,10 @@ http://localhost:8080/swagger-ui/index.html
 
 ![img.png](src/img/diagramaEntidadRelacion.png)
 
+Versión 2:
+
+![img.png](src/img/diagramaEntidadRelacionV2.png)
+
 
 ![img.png](src/img/muestraBaseDatosTopicos.png)
 
@@ -160,11 +164,14 @@ Archivo de configuración Insomia Desktop
 
 ## Mejoras y Bugs pendientes por corregir
 
-| Item | Tipo   | Descripción                                              | Propuesta      | Estado      |
-|------|--------|----------------------------------------------------------|----------------|-------------|
-| 1    | Bug    | ~~No guarda la clave encriptada en los nuevos usuarios~~ | revisar código | Corregido   |
-|      |        |                                                          |                |             |
-| 2    | Mejora | Que solo liste los usuarios activos                      |                | En revisión |
-|      |        |                                                          |                |             |
-| 3    | Mejora | Mejorar los mensajes en cada respuesta de la API         |                |             |
+| Item | Tipo   | Descripción                                                          | Propuesta      | Estado    |
+|------|--------|----------------------------------------------------------------------|----------------|-----------|
+| 1    | Bug    | ~~No guarda la clave encriptada en los nuevos usuarios~~             | revisar código | Corregido |
+|      |        |                                                                      |                |           |
+| 2    | Mejora | Que solo liste los usuarios activos                                  |                |           |
+|      |        |                                                                      |                |           |
+| 3    | Mejora | Mejorar los mensajes en cada respuesta de la API                     |                |           |
+|      |        |                                                                      |                |           |
+| 4    | Mejora | Agregar los endpoints para roles, respuestas etc de la version 2 del |                |           |
+|      |        | diagrama entidad relacion                                            |                |           |
 
