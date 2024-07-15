@@ -160,11 +160,11 @@ Archivo de configuración Insomia Desktop
 
 ## Mejoras y Bugs pendientes por corregir
 
-| Item | Tipo   | Descripción                                          | Propuesta      |
-|------|--------|------------------------------------------------------|----------------|
-| 1    | Bug    | No guarda la clave encriptada en los nuevos usuarios | revisar código |
-|      |        |                                                      |                |
-| 2    | Mejora | Que solo liste los usuarios activos                  |                |
-|      |        |                                                      |                |
-| 3    | Mejora | Mejorar los mensajes en cada respuesta de la API     |                |
+| Item | Tipo   | Descripción                                              | Propuesta      | Estado      |
+|------|--------|----------------------------------------------------------|----------------|-------------|
+| 1    | Bug    | ~~No guarda la clave encriptada en los nuevos usuarios~~ | revisar código | Corregido   |
+|      |        |                                                          |                |             |
+| 2    | Mejora | Que solo liste los usuarios activos                      |                | En revisión |
+|      |        |                                                          |                |             |
+| 3    | Mejora | Mejorar los mensajes en cada respuesta de la API         |                |             |
 
